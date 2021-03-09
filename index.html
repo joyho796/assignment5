@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lottery Simulation</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: rgb(197, 225, 232);
+            background-position: top;
+            background-attachment: scroll;
+            background-size: 750px;
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            padding-bottom: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lottery Simulation</h1>
+    <div id="info">
+        <br>
+        <p>Pick your numbers to see how much you'll win!</p>
+
+        <div id="flex">
+            <p id="nums">-----</p>
+            <p id="lucky" style="color:rgb(50, 99, 18);">-</p>
+        </div>
+
+        <div id="flex">
+        <br>
+        <button class="button" onclick="getNumbers()">Enter Numbers</button><button class="button" onclick="getResults(document.getElementById('nums').innerHTML, document.getElementById('lucky').innerHTML)">Get Results</button>
+        </div>
+        <br><br>
+    </div>
+
+    <br><br><br>
+
+    <div id = "summary" style="display:none;">
+        <br>
+        <h3 id = "winnings">Your Winnings</h3>
+        <br>
+
+        <p id=>Your Numbers (sorted)</p>
+        <div id="flex">
+            <p id="input">-----</p>
+            <p id="inputLucky" style="color:rgb(50, 99, 18);">-</p>
+        </div>
+        <br>
+
+        <p>Lottery Numbers</p>
+        <div id="flex">
+            <p id="lottery">-----</p>
+            <p id="lottoLucky" style="color:rgb(50, 99, 18);">-</p>
+        </div>
+        <br>
+
+        <p id="matches">Matches: </p>
+        <br>
+    </div>
+
+
+</body>
+
+</html>
