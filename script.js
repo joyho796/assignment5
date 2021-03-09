@@ -1,11 +1,11 @@
 function getNumbers() {
     //get input numbers
-    var input = prompt("Enter your 5 numbers:");
+    var input = prompt("Enter your 5 numbers (1-48) seperated by spaces:");
     var nums = input.split(" ");
     for (i = 0; i < 5; i++) {
         nums[i] = parseInt(nums[i]);
     }
-    lucky = parseInt(prompt("Enter your lucky number;"));
+    lucky = parseInt(prompt("Enter your lucky number (1-18):"));
 
     document.getElementById("nums").innerHTML = nums.join(" ");
     document.getElementById("lucky").innerHTML = "&nbsp" + lucky;
